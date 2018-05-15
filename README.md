@@ -20,6 +20,7 @@ npm install geezify-js
 Usage
 ----------------
 ```js
+const Geezify = require("geezify-js")
 
 geez = Geezify.create();
 
@@ -29,11 +30,13 @@ console.log(geez.toGeez(1986));             // ፲፱፻፹፮
 console.log(geez.toGeez(1000000));          // ፻፼
 
 // or you can even do the reverse
+// this is the tricky part you wouldn't see else where
+// at least for now
 
-console.log(geez.toAscii('፻፳፫'));                // 123
-console.log(geez.toAscii('፲፪፻፴፬'));              // 1234
-console.log(geez.toAscii('፲፱፻፹፮'));              // 1986
-console.log(geez.toAscii('፻፼'));                 // 1000000
+console.log(geez.toAscii('፻፳፫'));           // 123
+console.log(geez.toAscii('፲፪፻፴፬'));         // 1234
+console.log(geez.toAscii('፲፱፻፹፮'));        // 1986
+console.log(geez.toAscii('፻፼'));          // 1000000
 ```
 
 License
