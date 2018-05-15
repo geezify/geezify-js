@@ -53,12 +53,16 @@ module.exports = class GeezCalculator {
      * @param $separator
      */
     processBySeparator($block, $separator) {
-        if ($separator === ONE) {
-            this.addToTotal($block);
-        } else if ($separator === HUNDRED) {
-            this.updateSubTotal($block);
-        } else if ($separator === TEN_THOUSAND) {
-            this.updateTotal($block);
+        switch ($separator) {
+            case ONE:
+                this.addToTotal($block);
+                break;
+            case HUNDRED:
+                this.updateSubTotal($block);
+                break;
+            case TEN_THOUSAND:
+                this.updateTotal($block);
+                break;
         }
     }
 
