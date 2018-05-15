@@ -1,0 +1,32 @@
+{
+  "name": "geezify",
+  "version": "1.0.0",
+  "description": "library to convert ascii number like 3456 to geez number ፴፬፻፶፮",
+  "main": "src/Geezify.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geezify/geezify-js.git"
+  },
+  "keywords": [
+    "geezify",
+    "ethiopian",
+    "number",
+    "geez"
+  ],
+  "author": "Sam As End <4sam21@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geezify/geezify-js/issues"
+  },
+  "homepage": "https://github.com/geezify/geezify-js#readme",
+  "devDependencies": {
+    "mocha": "^5.1.1",
+    "sinon": "^5.0.7"
+  }
+}
