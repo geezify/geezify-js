@@ -96,6 +96,7 @@ module.exports = class TestCase {
 
     static invalidNumberDataProvider() {
         return [
+            [0],
             [11.11],
             ['2a3'],
             ['11.11'],

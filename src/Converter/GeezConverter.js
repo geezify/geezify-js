@@ -64,7 +64,9 @@ module.exports = class GeezConverter extends Converter {
     validateAsciiNumber($ascii_number) {
         let number = parseInt($ascii_number);
 
-        if (Number.isNaN(number) || `${number}` !== `${$ascii_number}`) {
+        if (Number.isNaN(number) ||
+                    `${number}` !== `${$ascii_number}` ||
+                    number < 1) {
             throw new NotAnIntegerArgumentException($ascii_number);
         }
 
