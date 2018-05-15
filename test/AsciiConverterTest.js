@@ -19,7 +19,7 @@ describe('AsciiConverterTest', function () {
 
     describe('#test_invalid_number_throw_exception()', function () {
         it('should throws NotGeezArgumentException', function () {
-            TestCase.invalidNumberDataProvider().forEach(($value) => {
+            TestCase.invalidNumberDataProvider().forEach(([$value]) => {
                 assert.throws(() => {
                     asciiConverter.convert($value)
                 }, NotGeezArgumentException);

@@ -104,6 +104,7 @@ module.exports = class TestCase {
             [false],
             [[]],
             [{}],
+            ['፷፭X፲፯'],
             ['፲፯ lorem ፷፭ ipsum ፳፩'],
         ];
     }
