@@ -1,7 +1,7 @@
 {
   "name": "geezify-js",
-  "version": "1.0.0",
-  "description": "library to convert ascii number like 3456 to geez number ፴፬፻፶፮",
+  "version": "1.0.1",
+  "description": "library to convert ascii number like 3456 to geez number ፴፬፻፶፮ and vise versa",
   "main": "src/Geezify.js",
   "scripts": {
     "test": "nyc --reporter=html --reporter=text mocha",
