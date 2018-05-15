@@ -29,10 +29,10 @@ console.log(geez.toGeez(1000000));          // ፻፼
 
 // or you can even do the reverse
 
-console.log(geez.toGeez('፻፳፫'));                // 123
-console.log(geez.toGeez('፲፪፻፴፬'));              // 1234
-console.log(geez.toGeez('፲፱፻፹፮'));              // 1986
-console.log(geez.toGeez('፻፼'));                 // 1000000
+console.log(geez.toAscii('፻፳፫'));                // 123
+console.log(geez.toAscii('፲፪፻፴፬'));              // 1234
+console.log(geez.toAscii('፲፱፻፹፮'));              // 1986
+console.log(geez.toAscii('፻፼'));                 // 1000000
 ```
 
 License
