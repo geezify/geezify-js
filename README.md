@@ -1,6 +1,9 @@
 Geezify-js  ![From Ethiopia](https://img.shields.io/badge/From-Ethiopia-brightgreen.svg)
 ==========
 
+[![Build Status](https://travis-ci.org/geezify/geezify-js.svg?branch=master)](https://travis-ci.org/geezify/geezify-js)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/geezify/geezify-js/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/geezify/geezify-js/?branch=master)
+
 This package is a library to convert ascii number like '**3456**' to geez number '**፴፬፻፶፮**' and vise versa.
 
  > Ge'ez (ግዕዝ) is an ancient South Semitic language that originated in Eritrea and the northern region of Ethiopia in the Horn of Africa. It later became the official language of the Kingdom of Aksum and Ethiopian imperial court.
