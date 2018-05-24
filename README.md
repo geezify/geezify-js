@@ -4,7 +4,7 @@ Geezify-js  ![From Ethiopia](https://img.shields.io/badge/From-Ethiopia-brightgr
 [![Build Status](https://travis-ci.org/geezify/geezify-js.svg?branch=master)](https://travis-ci.org/geezify/geezify-js)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/geezify/geezify-js/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/geezify/geezify-js/?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/geezify/geezify-js/badge.svg?branch=master)](https://coveralls.io/github/geezify/geezify-js?branch=master)
-[![NPM Download](https://img.shields.io/npm/dt/geezify-js.svg?style=flat)]
+[![NPM Download](https://img.shields.io/npm/dt/geezify-js.svg?style=flat)](https://www.npmjs.com/package/geezify-js)
 
 This package is a library to convert ascii number like '**3456**' to geez number '**፴፬፻፶፮**' and vise versa.
 
