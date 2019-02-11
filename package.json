@@ -1,32 +1,38 @@
 {
-  "name": "geezify-js",
-  "version": "1.0.1",
-  "description": "library to convert ascii number like 3456 to geez number ፴፬፻፶፮ and vise versa",
-  "main": "src/Geezify.js",
-  "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/geezify/geezify-js.git"
-  },
-  "keywords": [
-    "geezify",
-    "ethiopian",
-    "number",
-    "geez"
-  ],
-  "author": "Sam As End <4sam21@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/geezify/geezify-js/issues"
-  },
-  "homepage": "https://github.com/geezify/geezify-js#readme",
-  "devDependencies": {
-    "mocha": "^5.1.1",
-    "sinon": "^5.0.7",
-    "nyc": "^11.7.3",
-    "coveralls": "^3.0.1"
-  }
+    "name": "geezify-js",
+    "version": "1.0.1",
+    "description": "library to convert ascii number like 3456 to geez number ፴፬፻፶፮ and vise versa",
+    "main": "src/Geezify.js",
+    "scripts": {
+        "build": "webpack --mode=production --config webpack.config.js",
+        "test": "nyc --reporter=html --reporter=text mocha",
+        "coverage": "nyc report --reporter=text-lcov | coveralls"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/geezify/geezify-js.git"
+    },
+    "keywords": [
+        "geezify",
+        "ethiopian",
+        "number",
+        "geez"
+    ],
+    "author": "Sam As End <4sam21@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/geezify/geezify-js/issues"
+    },
+    "homepage": "https://github.com/geezify/geezify-js#readme",
+    "devDependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/preset-env": "^7.3.1",
+        "babel-loader": "^8.0.5",
+        "coveralls": "^3.0.1",
+        "mocha": "^5.1.1",
+        "nyc": "^11.7.3",
+        "sinon": "^5.0.7",
+        "webpack": "^4.29.3",
+        "webpack-cli": "^3.2.3"
+    }
 }
