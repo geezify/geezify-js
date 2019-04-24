@@ -16,14 +16,21 @@ click [here](https://en.wikipedia.org/wiki/Ge%27ez) to read more.
 
 Installation
 ------------
+
+### Node
 ```sh
 npm install geezify-js
+```
+
+### Browser
+```html
+<script src="https://cdn.jsdelivr.net/gh/geezify/geezify-js/dist/geezify.min.js"></script>
 ```
 
 Usage
 ----------------
 ```js
-const Geezify = require("geezify-js")
+const Geezify = require("geezify-js") // For Node only
 
 geez = Geezify.create();
 
