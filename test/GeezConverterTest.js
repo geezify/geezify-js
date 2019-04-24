@@ -6,25 +6,25 @@ const NotAnIntegerArgumentException = require('../src/Exception/NotAnIntegerArgu
 
 const geezConverter = new GeezConverter();
 
-describe('GeezConverterTest', function () {
+/* global describe, it */
 
-    describe('#test_geez_converter()', function () {
-        it('should convert ascii number to geez', function () {
-            TestCase.geezNumberTestDataProvider().forEach(([$number, $geez_number]) => {
-                $result = geezConverter.convert($number);
-                assert.equal($geez_number, $result);
-            });
-        });
+describe('GeezConverterTest', () => {
+  describe('#test_geez_converter()', () => {
+    it('should convert ascii number to geez', () => {
+      TestCase.geezNumberTestDataProvider().forEach(([$number, $geez_number]) => {
+        const $result = geezConverter.convert($number);
+        assert.equal($geez_number, $result);
+      });
     });
+  });
 
-    describe('#test_invalid_number_throw_exception()', function () {
-        it('should throws NotAnIntegerArgumentException', function () {
-            TestCase.invalidNumberDataProvider().forEach(($number) => {
-                assert.throws(() => {
-                    geezConverter.convert($number);
-                }, NotAnIntegerArgumentException);
-            });
-        });
+  describe('#test_invalid_number_throw_exception()', () => {
+    it('should throws NotAnIntegerArgumentException', () => {
+      TestCase.invalidNumberDataProvider().forEach(($number) => {
+        assert.throws(() => {
+          geezConverter.convert($number);
+        }, NotAnIntegerArgumentException);
+      });
     });
-
+  });
 });

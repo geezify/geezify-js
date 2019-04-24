@@ -4,27 +4,27 @@ const TestCase = require('./TestCase');
 const AsciiConverter = require('../src/Converter/AsciiConverter');
 const NotGeezArgumentException = require('../src/Exception/NotGeezArgumentException');
 
-asciiConverter = new AsciiConverter();
+const asciiConverter = new AsciiConverter();
 
-describe('AsciiConverterTest', function () {
+/* global describe, it */
 
-    describe('#test_ascii_converter()', function () {
-        it('should convert geez number to ascii', function () {
-            TestCase.geezNumberTestDataProvider().forEach(([$ascii, $geez]) => {
-                $result = asciiConverter.convert($geez);
-                assert.equal($ascii, $result);
-            });
-        });
+describe('AsciiConverterTest', () => {
+  describe('#test_ascii_converter()', () => {
+    it('should convert geez number to ascii', () => {
+      TestCase.geezNumberTestDataProvider().forEach(([$ascii, $geez]) => {
+        const $result = asciiConverter.convert($geez);
+        assert.equal($ascii, $result);
+      });
     });
+  });
 
-    describe('#test_invalid_number_throw_exception()', function () {
-        it('should throws NotGeezArgumentException', function () {
-            TestCase.invalidNumberDataProvider().forEach(([$value]) => {
-                assert.throws(() => {
-                    asciiConverter.convert($value)
-                }, NotGeezArgumentException);
-            });
-        });
+  describe('#test_invalid_number_throw_exception()', () => {
+    it('should throws NotGeezArgumentException', () => {
+      TestCase.invalidNumberDataProvider().forEach(([$value]) => {
+        assert.throws(() => {
+          asciiConverter.convert($value);
+        }, NotGeezArgumentException);
+      });
     });
-
+  });
 });
