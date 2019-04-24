@@ -3,6 +3,9 @@
     "version": "1.0.1",
     "description": "library to convert ascii number like 3456 to geez number ፴፬፻፶፮ and vise versa",
     "main": "src/Geezify.js",
+    "unpkg": "dist/geezify.min.js",
+    "jsdelivr": "dist/geezify.min.js",
+
     "scripts": {
         "build": "webpack --mode=production --config webpack.config.js",
         "test": "nyc --reporter=html --reporter=text mocha",
