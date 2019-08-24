@@ -1,11 +1,10 @@
 {
     "name": "geezify-js",
-    "version": "1.0.1",
+    "version": "1.1.2",
     "description": "library to convert ascii number like 3456 to geez number ፴፬፻፶፮ and vise versa",
     "main": "src/Geezify.js",
     "unpkg": "dist/geezify.min.js",
     "jsdelivr": "dist/geezify.min.js",
-
     "scripts": {
         "build": "webpack --mode=production --config webpack.config.js",
         "test": "nyc --reporter=html --reporter=text mocha",
@@ -28,17 +27,17 @@
     },
     "homepage": "https://github.com/geezify/geezify-js#readme",
     "devDependencies": {
-        "@babel/core": "^7.2.2",
-        "@babel/preset-env": "^7.3.1",
-        "babel-loader": "^8.0.5",
-        "coveralls": "^3.0.3",
+        "@babel/core": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "babel-loader": "^8.0.6",
+        "coveralls": "^3.0.6",
         "eslint": "^5.16.0",
-        "eslint-config-airbnb-base": "^13.1.0",
-        "eslint-plugin-import": "^2.17.2",
+        "eslint-config-airbnb-base": "^13.2.0",
+        "eslint-plugin-import": "^2.18.2",
         "mocha": "^5.1.1",
-        "nyc": "^14.0.0",
+        "nyc": "^14.1.1",
         "sinon": "^5.0.7",
-        "webpack": "^4.29.3",
-        "webpack-cli": "^3.2.3"
+        "webpack": "^4.39.2",
+        "webpack-cli": "^3.3.7"
     }
 }
