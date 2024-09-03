@@ -8,7 +8,8 @@
     "jsdelivr": "dist/geezify.mjs",
     "scripts": {
         "build": "tsup",
-        "test": "nyc --reporter=html --reporter=text mocha",
+        "test": "mocha -r ts-node/register tests/**/*.spec.ts",
+        "test:coverage": "nyc npm run test",
         "coverage": "nyc report --reporter=text-lcov | coveralls"
     },
     "repository": {
@@ -30,17 +31,39 @@
     "devDependencies": {
         "@babel/core": "^7.5.5",
         "@babel/preset-env": "^7.5.5",
+        "@istanbuljs/nyc-config-typescript": "^1.0.2",
+        "@types/mocha": "^10.0.7",
+        "@types/sinon": "^17.0.3",
         "babel-loader": "^8.0.6",
         "coveralls": "^3.0.6",
         "eslint": "^5.16.0",
         "eslint-config-airbnb-base": "^13.2.0",
         "eslint-plugin-import": "^2.18.2",
-        "mocha": "^5.1.1",
-        "nyc": "^14.1.1",
+        "mocha": "^5.2.0",
+        "nyc": "^17.0.0",
         "sinon": "^5.0.7",
+        "ts-node": "^10.9.2",
         "tsup": "^8.2.4",
         "typescript": "^5.5.4",
         "webpack": "^4.39.2",
         "webpack-cli": "^3.3.7"
+    },
+    "nyc": {
+        "extends": "@istanbuljs/nyc-config-typescript",
+        "check-coverage": true,
+        "all": true,
+        "include": [
+            "src/**/!(*.test.*).[tj]s?(x)"
+        ],
+        "exclude": [
+            "src/_tests_/**/*.*"
+        ],
+        "reporter": [
+            "html",
+            "lcov",
+            "text",
+            "text-summary"
+        ],
+        "report-dir": "coverage"
     }
 }
