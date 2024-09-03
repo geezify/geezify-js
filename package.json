@@ -6,7 +6,7 @@
     "unpkg": "dist/geezify.min.js",
     "jsdelivr": "dist/geezify.min.js",
     "scripts": {
-        "build": "webpack --mode=production --config webpack.config.js",
+        "build": "tsup",
         "test": "nyc --reporter=html --reporter=text mocha",
         "coverage": "nyc report --reporter=text-lcov | coveralls"
     },
